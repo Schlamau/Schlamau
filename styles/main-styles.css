@@ -1,0 +1,460 @@
+
+/* media */
+
+/* smol phone */
+@media only screen and (max-width: 510px) {
+	nav {
+		font-size: 80%;
+	}
+	header, .footer-body {
+		font-size: 80%;
+		margin-top: -.5em;
+	}
+	.headline > div {}
+	p.label, div.content-content, div.content-description, table {
+		font-size: 80%;
+	}
+	main {
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+	}
+}
+/* smol phone */
+
+
+
+
+/* medium screen */
+@media only screen and (min-width: 510px) {
+	nav {
+		font-size: 90%;
+	}
+	header, .footer-body {
+		font-size: 90%;
+	}
+	.headline > div {
+		padding-top: 1.5em;
+	}
+	p.label, div.content-content, div.content-description, table {
+		font-size: 80%;
+	}
+	main {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
+/* medium screen */
+
+
+
+/* medium-big screen*/
+@media only screen and (min-width: 700px) {
+	main {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+/* medium-big screen*/
+
+
+
+
+/* big screen */
+@media only screen and (min-width: 1080px) {
+	main {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	nav, header, .footer-body {
+		font-size: 110%;
+	}
+	label, .accordion-content > p {
+		font-size: 120%;
+	}
+}
+/* big screen */
+
+
+/* media */
+
+
+
+
+
+/*Genaral*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #1e1e2e;
+	font-family: Sans-Serif;
+}
+main {
+	flex: 1 0 auto;
+}
+footer {
+	color: #eeeeee;
+	background: #151525;
+	position: relative;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+/* Genaral */
+
+
+
+/* cyceling_images */
+.image_cycler {
+  margin-top: 1em;
+  position: relative;
+}
+.image_cycler img {
+	border-radius: .75em;
+	color: #eeeeee;
+	border-style: solid;
+	opacity: 0;
+}
+
+#imgcycle1, #imgcycle2, #imgcycle3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+#imgcycle0 {
+  animation-name: imagecyclingimage;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+#imgcycle1 {
+  animation-name: imagecyclingimage;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 5s;
+}
+#imgcycle2 {
+  animation-name: imagecyclingimage;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+#imgcycle3 {
+  animation-name: imagecyclingimage;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-delay: 15s;
+}
+
+/* cyceling_images */
+
+
+
+
+/* Navbar */
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-style: none;
+	height: 100vh;
+}
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-shadow: 0em .30em .5em .25em
+	rgba(21,21,37,1);
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	background-color: #151525;
+	z-index: 100;
+}
+
+.content {
+	margin-top: 3em;
+}
+.content > div {
+	padding: 15em;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: left;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: #eeeeee;
+	font-weight: 600;
+	text-align: center;
+	padding: .7em 1em;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	background-color: #008800;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #009900;
+	min-width: 10px;
+	font-weight: 500;
+	box-shadow: .25em .25em .5em 0
+	rgba(28,28,44,0.2);
+	overflow: hidden;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+.dropdown-content a:first-of-type {
+  margin-top: .5em
+}
+
+.dropdown-content a {
+	color: #eeeeee;
+	padding: .5em 1em;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:last-of-type {
+  margin-bottom: .5em
+}
+
+.dropdown-content a:hover {
+	background-color: #00aa00
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+/*um aktuellen tab hervorzuheben diesen code im head einfügen:
+"<style type="text/css">
+nav ul li a[href="#touristik"] {
+	background-color: #007700;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+} 
+</style>" 
+und #touristik mit der aktuellen unterkategorie ersetzen z.B. #firmen
+*/
+div.dropdown-content > a:visited {
+	color: #1c1c2c;
+}
+/* Navbar */
+
+
+
+
+/* Header */
+.headline {
+	padding-top: 2.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	font-size: 1.5em;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	background-color: #2b2b3b;
+	color: #eeeeee;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+/* Header */
+
+
+
+/* Main */
+.text-icons {
+  height: 1em;
+  width: 1em;
+  color: #eeeeee;
+}
+/* wird genutzt um z.B. die pfeile den content blasen zu formatieren */
+
+main p {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	color: #eeeeee;
+}
+.link {
+	text-decoration: none;
+	color: #aaeeaa;
+}
+/*style eines internen links*/
+
+.ext-link {
+	text-decoration: none;
+	color: #aaeeaa;
+}
+/*style eines externen links*/
+
+.ext-link-logo {
+	margin-left: -.25em;
+	margin-right: -.25em;
+}
+/*vorschau/logo bild der zu betretenen externen seite*/
+
+img[src*="images/logo_s/wikipedia_logo_v3.svg"] {
+	margin-bottom: -.1em;
+	height: 1em;
+}
+/*verschiebt wiki logo nach unten*/
+
+img[src*="images/logo_s/wiesenburg_logo.svg"] {
+	height: 1em;
+}
+
+hr {
+	border-style: solid;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+table, th, td {
+	border: 1px solid red;
+	margin-bottom: -.5em;
+}
+th, td {
+	padding: 1em;
+}
+th {
+	border-bottom: .2em solid #eeeeee;
+}
+th, td {
+	border-right: .2em dashed #eeeeee;
+}
+tr :last-of-type {
+	border-right: none;
+}
+.image {
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+/*bild behälter*/
+.image-text {
+	padding-left: .5em;
+	margin-right: -.25em;
+	margin-top: 0em;
+	border-radius: .75em;
+	border-style: solid;
+}
+img[src*="images/sehenswuerdigkeiten"] {
+	border-radius: .75em;
+	border-style: solid;
+}
+/*standart bild*/
+.copy-headline {
+	font-weight: bold;
+}
+/*hervorgehobener text*/
+/* Main */
+
+
+
+/* content blase */
+.content-description {
+	margin-top: 3em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: #333344;
+	color: #eeeeee;
+	margin-bottom: -3.5em;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+/*content blase für einleitung*/
+.label {
+	margin-top: 3em;
+	padding: 1em;
+	background-color: #2b2b3b;
+	color: #eeeeee;
+	box-shadow: .20em .20em .5em .25em
+	rgba(43,43,59,.7);
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;
+}
+
+/*content blase überschrift*/
+.content-content {
+	padding-bottom: .5em;
+	margin: -1em 1em 2em 1em;
+	max-height: 10000px;
+	overflow: hidden;
+	box-shadow: .20em .20em .5em .25em
+	rgba(51,51,68,.7);
+	color: #eeeeee;
+	background-color: #333344;
+	border-bottom-left-radius: 1em;
+	border-bottom-right-radius: 1em;
+}
+
+/*content blase inhalt*/
+/* content blase */
+
+
+
+/* Google inbed */
+.anreise {
+	padding-left: .5em;
+	margin-bottom: -.75em;
+	margin-right: 1.25em;
+	margin-left: 1.5em;
+	border-radius: .75em;
+	border-style: solid;
+}
+
+/*Verschiebt den anreise Schriftzug*/
+.google-maps {
+	height: 25em;
+	margin-right: -1.25em;
+	border-radius: .75em;
+	border-style: solid;
+	width: 100%;
+}
+/* Google inbed */
+
+
+
+/*Footer*/
+footer-body {
+	margin-bottom: 2em;
+	padding: 2em;
+}
+.footer-body li > a {
+	color: #eeeeee;
+	text-decoration: none;
+}
+/*Footer*/
